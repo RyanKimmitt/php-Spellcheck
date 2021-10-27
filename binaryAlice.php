@@ -4,8 +4,9 @@ include("index.php");
 
 function binarayAlice($item, $array)
 {
-  $spellCount = 0;
   $time_start = microtime(true);
+  $spellCount = 0;
+  
   for ($i = 0; $i < count($item); $i++) {
     $value = binaraySearch($item[$i], $array);
     if ($value == -1)
